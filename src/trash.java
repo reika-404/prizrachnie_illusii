@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.awt.event.*;
 
-import static com.sun.java.accessibility.util.AWTEventMonitor.addMouseListener;
+
 
 public class trash {
     Polygon polygon = new Polygon();
@@ -21,7 +21,7 @@ public class trash {
             polygon.addPoint(947-x, 414-y);
             polygon.addPoint(963-x, 419-y);
             polygon.addPoint(974-x, 429-y);
-            polygon.addPoint(979-x, 439-y);;
+            polygon.addPoint(979-x, 439-y);
             polygon.addPoint(979-x, 456-y);
             polygon.addPoint(987-x, 463-y);
             polygon.addPoint(1007-x, 483-y);

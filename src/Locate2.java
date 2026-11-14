@@ -5,7 +5,7 @@ public class Locate2 {
 
     Polygon polygon2 = new Polygon();
 
-    private int d_lin =12;
+    private final int d_lin =12;
     Locate2(){
 
         //  вершины некто для бокового линьки
@@ -22,7 +22,7 @@ public class Locate2 {
         polygon2.addPoint(940+d_lin, 384);
         polygon2.addPoint(956+d_lin, 389);
         polygon2.addPoint(967+d_lin, 399);
-        polygon2.addPoint(972+d_lin, 409);;
+        polygon2.addPoint(972+d_lin, 409);
         polygon2.addPoint(972+d_lin, 426);
         polygon2.addPoint(980+d_lin, 433);
         polygon2.addPoint(1000+d_lin, 453);
