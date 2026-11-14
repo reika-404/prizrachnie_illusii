@@ -33,7 +33,7 @@ public class NeMain extends JFrame {
             add(panel);
             setVisible(true);
         } catch (IOException e) {
-            System.err.println("Ошибка при чтении изображения: " + e.getMessage());
+            System.err.println("Ошибка при чтении изображения1: " + e.getMessage());
         }
 
     }
