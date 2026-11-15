@@ -21,10 +21,8 @@ public class Main extends JFrame {
         @Override
         public void mouseClicked(MouseEvent e) {
             if(e.getX() > 131 && e.getX() < 606 && e.getY() > 379 && e.getY() < 524){
-                //new Fon2();
-                nekto1 n1 = new nekto1();
+                Game n1 = new Game();
                 //    setVisible(false);
-
             }
         }
     };
