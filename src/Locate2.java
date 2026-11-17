@@ -29,8 +29,10 @@ public class Locate2 {
         polygon2.addPoint(981+d_lin, 485);
         polygon2.addPoint(966+d_lin, 494);
         polygon2.addPoint(931+d_lin, 501);
-        polygon2.addPoint(894+d_lin, 498);
-        polygon2.addPoint(886+d_lin, 504);
+        polygon2.addPoint(890+d_lin, 498);
+        polygon2.addPoint(886+d_lin, 503);
+
+
 
 
 

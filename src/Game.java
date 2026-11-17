@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class Game extends JFrame {
     private CardLayout cardLayout = new CardLayout();
-    private JPanel locationContainer;
+    private JPanel locations;
 
     private MouseListener vl = new MouseAdapter() {  // location
         @Override
@@ -13,6 +13,7 @@ public class Game extends JFrame {
             int a = e.getX();
             int b= e.getY();
             System.out.println(a + " " + b);
+
         }
     };
 
@@ -20,10 +21,10 @@ public class Game extends JFrame {
         try {
             setSize(1920, 1180);
             setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-            locationContainer = new JPanel(cardLayout);
-            locationContainer.add("Nekto", new Nekto());
-            cardLayout.show(locationContainer, "Nekto");
-            add(locationContainer);
+            locations = new JPanel(cardLayout);
+            locations.add("Nekto", new Nekto());
+            cardLayout.show(locations, "Nekto");
+            add(locations);
             setVisible(true);
         } catch (IOException e) {
             System.err.println("Ошибка при чтении изображения4: " + e.getMessage());
