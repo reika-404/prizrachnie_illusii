@@ -1,6 +1,7 @@
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 
 public class Lin1 {
     private BufferedImage lin_2ushi,lin_2mae, lin_2migi, lin_2hida ;
@@ -10,16 +11,12 @@ public class Lin1 {
     public final int lin_bok_width = 32;
 
 
-    Lin1(int x_, int y_)
-    {
-        try {
-            lin_2ushi = ImageIO.read(new File("src\\inhren\\lin_2ushi.png"));
-            lin_2mae = ImageIO.read(new File("src\\inhren\\lin_2mae.png"));
-            lin_2migi = ImageIO.read(new File("src\\inhren\\lin_2migi.png"));
-            lin_2hida = ImageIO.read(new File("src\\inhren\\lin_2hida.png"));
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+    Lin1(int x_, int y_) throws IOException {
+        lin_2ushi = ImageIO.read(new File("src\\inhren\\lin_2ushi.png"));
+        lin_2mae = ImageIO.read(new File("src\\inhren\\lin_2mae.png"));
+        lin_2migi = ImageIO.read(new File("src\\inhren\\lin_2migi.png"));
+        lin_2hida = ImageIO.read(new File("src\\inhren\\lin_2hida.png"));
+
         x = x_;
         y = y_;
     }

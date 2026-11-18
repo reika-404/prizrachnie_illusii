@@ -40,8 +40,8 @@ public class Locate2 {
 
 
     public boolean location2(int a, int b) {
-        boolean x = polygon2.contains(a, b);
-        return x;
+        return polygon2.contains(a, b);
+
     }
 }
 

@@ -36,8 +36,8 @@ public class Locate1 {
 
         }
         public boolean location1(int a, int b) {
-            boolean x = polygon.contains(a, b);
-            return x;
+            return polygon.contains(a, b);
+
         }
 
 }

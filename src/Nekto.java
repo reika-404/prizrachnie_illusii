@@ -108,22 +108,21 @@ public class Nekto extends JPanel {
         fon3 = ImageIO.read(new File("src\\inhren\\fon3.png"));
         fon2 = ImageIO.read(new File("src\\inhren\\fon2.png"));
 
-        setFocusable(true);
+        setFocusable(true);// может принять фокус
 
         addKeyListener(kl);
 
-        addComponentListener(new ComponentAdapter() { //фокус
+        addComponentListener(new ComponentAdapter() { //когда показывается панелька, на нее переводится фокус
             @Override
             public void componentShown(ComponentEvent e) {
-                SwingUtilities.invokeLater(() -> e.getComponent().requestFocusInWindow());
+                e.getComponent().requestFocusInWindow();
             }
         });
     }
 
     @Override
     protected void paintComponent(Graphics g) {
-        super.paintComponent(g); // Обязательный вызов для очистки буфера
-
+        super.paintComponent(g);
         if (enter_clicked)
         {
             g.drawImage(fon3, 0, 0,  null);
